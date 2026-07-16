@@ -99,6 +99,13 @@ img{display:block;max-width:100%}
 .social{width:100%;margin-top:3rem}
 .social__eyebrow{display:block;font-family:"Bebas Neue",sans-serif;font-size:1.6rem;letter-spacing:.08em;
   text-transform:uppercase;color:var(--gold);margin-bottom:1.3rem}
+.social__head{max-width:44rem;margin:0 auto 1.8rem;text-align:center}
+.social__head .pill{margin-bottom:1rem}
+.social__title{font-family:"Bebas Neue",sans-serif;font-weight:400;text-transform:uppercase;
+  font-size:clamp(2rem,6vw,3.4rem);line-height:1;letter-spacing:.01em;color:var(--white)}
+.social__title .g{background:linear-gradient(180deg,var(--gold-soft),var(--gold),var(--gold-2));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--gold)}
+.social__sub{color:var(--muted);font-size:1rem;margin-top:.8rem}
 .carousel{position:relative;width:100%;overflow:hidden;
   -webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);
           mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
@@ -172,6 +179,21 @@ img{display:block;max-width:100%}
   .benefits__grid{grid-template-columns:1fr}
   .mentor__stats b{font-size:2rem}
 }
+
+/* ===== RODAPÉ ===== */
+.site-footer{width:100%;margin-top:2rem;padding:3rem 1.3rem 2.4rem;
+  border-top:1px solid rgba(212,175,55,.18);background:var(--black)}
+.site-footer__inner{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center}
+.site-footer__logo{height:60px;width:auto;margin-bottom:1.6rem;
+  filter:brightness(0) saturate(100%) invert(72%) sepia(46%) saturate(640%) hue-rotate(1deg) brightness(94%) contrast(89%);
+  -webkit-filter:brightness(0) saturate(100%) invert(72%) sepia(46%) saturate(640%) hue-rotate(1deg) brightness(94%) contrast(89%)}
+.site-footer__quote{font-style:italic;font-weight:700;color:var(--white);font-size:1.15rem;margin-bottom:1.6rem}
+.site-footer__support{background:none;border:none;cursor:pointer;
+  font-family:"Montserrat",sans-serif;font-weight:800;font-size:1.15rem;letter-spacing:.01em;
+  color:var(--gold);margin-bottom:1.8rem;transition:color .15s,transform .15s}
+.site-footer__support:hover{color:var(--gold-soft);transform:translateY(-1px)}
+.site-footer__support:focus-visible{outline:2px solid var(--gold);outline-offset:4px;border-radius:6px}
+.site-footer__copy{color:var(--muted);font-size:.82rem}
 
 /* ===== POPUP / MODAL DE CAPTURA ===== */
 .modal{position:fixed;inset:0;z-index:60;display:none;align-items:center;justify-content:center;padding:1.2rem}

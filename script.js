@@ -28,7 +28,10 @@ function closeModal() {
   document.body.style.overflow = "";
 }
 
-if (openBtn) openBtn.addEventListener("click", openModal);
+/* Todos os gatilhos que abrem o popup: botão principal + "Suporte via WhatsApp" no rodapé */
+document
+  .querySelectorAll("#open-modal, [data-open-modal]")
+  .forEach((el) => el.addEventListener("click", openModal));
 
 if (modal) {
   modal.querySelectorAll("[data-close]").forEach((el) =>

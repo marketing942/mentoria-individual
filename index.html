@@ -176,7 +176,11 @@
 
     <!-- 7. PROVAS SOCIAIS — slots para fotos dos alunos com o Prof. Everton Mota -->
     <section class="social">
-      <span class="social__eyebrow">Nossos alunos</span>
+      <div class="social__head">
+        <span class="pill">Resultados reais</span>
+        <h2 class="social__title">Alunos que já <span class="g">vestiram a farda</span></h2>
+        <p class="social__sub">Histórias reais de quem chegou onde você quer chegar com a metodologia do Prof. Everton.</p>
+      </div>
 
       <!-- Carrossel infinito de fotos dos alunos (loop contínuo via CSS).
            A 2ª sequência é uma cópia oculta de leitores de tela que garante
@@ -217,6 +221,16 @@
     </section>
 
   </main>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <img class="site-footer__logo" src="public/logo-cppem.png" alt="CPPEM Concursos Públicos" />
+      <p class="site-footer__quote">"Seu sonho é o nosso principal objetivo."</p>
+      <button type="button" class="site-footer__support" data-open-modal>Suporte via WhatsApp</button>
+      <p class="site-footer__copy">© 2026 CPPEM Concursos · Caruaru, Pernambuco · Todos os direitos reservados</p>
+    </div>
+  </footer>
 
   <!-- ===== POPUP / MODAL DE CAPTURA ===== -->
   <div class="modal" id="lead-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
