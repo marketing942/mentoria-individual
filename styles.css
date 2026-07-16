@@ -180,6 +180,34 @@ img{display:block;max-width:100%}
   .mentor__stats b{font-size:2rem}
 }
 
+/* ===== FAQ (acordeão) ===== */
+.faq{width:100%;margin-top:1rem;padding:2.5rem 0}
+.faq__head{text-align:center;margin:0 auto 1.8rem}
+.faq__head .pill{margin-bottom:1rem}
+.faq__title{font-family:"Bebas Neue",sans-serif;font-weight:400;text-transform:uppercase;
+  font-size:clamp(2rem,6vw,3.2rem);line-height:1;letter-spacing:.01em;color:var(--white)}
+.faq__title .g{background:linear-gradient(180deg,var(--gold-soft),var(--gold),var(--gold-2));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--gold)}
+.faq__list{display:flex;flex-direction:column;gap:.75rem;max-width:760px;margin:0 auto;text-align:left}
+.faq__item{background:linear-gradient(180deg,#141310,#0d0c0a);
+  border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:border-color .18s}
+.faq__item[open]{border-color:rgba(212,175,55,.5)}
+.faq__item summary{display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  cursor:pointer;list-style:none;padding:1.05rem 1.25rem;
+  font-family:"Montserrat",sans-serif;font-weight:700;font-size:.98rem;color:var(--white)}
+.faq__item summary::-webkit-details-marker{display:none}
+.faq__item summary:focus-visible{outline:2px solid var(--gold);outline-offset:-2px;border-radius:12px}
+.faq__icon{position:relative;flex:0 0 auto;width:28px;height:28px;border-radius:50%;
+  border:1px solid rgba(212,175,55,.45);background:rgba(212,175,55,.06);transition:transform .2s}
+.faq__icon::before,.faq__icon::after{content:"";position:absolute;top:50%;left:50%;
+  background:var(--gold);border-radius:2px;transform:translate(-50%,-50%)}
+.faq__icon::before{width:12px;height:2px}
+.faq__icon::after{width:2px;height:12px;transition:transform .2s}
+.faq__item[open] .faq__icon{transform:rotate(180deg)}
+.faq__item[open] .faq__icon::after{transform:translate(-50%,-50%) scaleY(0)}
+.faq__answer{padding:0 1.25rem 1.15rem}
+.faq__answer p{color:var(--muted);font-size:.94rem;line-height:1.6}
+
 /* ===== RODAPÉ ===== */
 .site-footer{width:100%;margin-top:2rem;padding:3rem 1.3rem 2.4rem;
   border-top:1px solid rgba(212,175,55,.18);background:var(--black)}
@@ -189,7 +217,7 @@ img{display:block;max-width:100%}
   -webkit-filter:brightness(0) saturate(100%) invert(72%) sepia(46%) saturate(640%) hue-rotate(1deg) brightness(94%) contrast(89%)}
 .site-footer__quote{font-style:italic;font-weight:700;color:var(--white);font-size:1.15rem;margin-bottom:1.6rem}
 .site-footer__support{background:none;border:none;cursor:pointer;
-  font-family:"Montserrat",sans-serif;font-weight:800;font-size:1.15rem;letter-spacing:.01em;
+  font-family:"Montserrat",sans-serif;font-weight:700;font-size:.9rem;letter-spacing:.01em;
   color:var(--gold);margin-bottom:1.8rem;transition:color .15s,transform .15s}
 .site-footer__support:hover{color:var(--gold-soft);transform:translateY(-1px)}
 .site-footer__support:focus-visible{outline:2px solid var(--gold);outline-offset:4px;border-radius:6px}
