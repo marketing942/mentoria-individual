@@ -152,41 +152,18 @@ if (form) {
         body: JSON.stringify(payload)
       });
 
-      // 2. Dispara evento Lead no Meta Pixel
+      // 2. Envia o evento de Lead para o dataLayer (Google Tag Manager)
       try {
-        if (typeof fbq === "function") {
-          fbq("track", "Lead", {
-            content_name: "captura_cppem",
-            page_url: window.location.href
-          });
-
-          console.log("[Pixel Meta] Lead disparado com sucesso.");
-        } else {
-          console.warn("[Pixel Meta] fbq não encontrado.");
-        }
-      } catch (pixelError) {
-        console.warn("[Pixel Meta] Erro ao disparar Lead:", pixelError);
-      }
-
-      // 2.5. Dispara evento Lead no Pixel X App (antes do redirecionamento)
-      try {
-        if (window.pixel_x_app && typeof window.pixel_x_app.send_event === "function") {
-          await window.pixel_x_app.send_event({
-            // Evento
-            event_name: "Lead",
-
-            // Lead
-            lead_name: nome,
-            lead_email: email,
-            lead_phone: telefone
-          });
-
-          console.log("[Pixel X App] Lead disparado com sucesso.");
-        } else {
-          console.warn("[Pixel X App] pixel_x_app.send_event não encontrado.");
-        }
-      } catch (pxaError) {
-        console.warn("[Pixel X App] Erro ao disparar Lead:", pxaError);
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "lead",
+          lead_name: nome,
+          lead_email: email,
+          lead_phone: telefone,
+          page_url: window.location.href
+        });
+      } catch (dlError) {
+        console.warn("[GTM] Erro ao enviar evento de lead:", dlError);
       }
 
       // 3. Fecha o popup e redireciona IMEDIATAMENTE (mesma aba)
