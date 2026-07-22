@@ -43,26 +43,8 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && modal?.classList.contains("is-open")) closeModal();
 });
 
-/* --- Máscara: (00) 00000-0000 ---
-   DDD + 9 dígitos. Aceita número pré-preenchido (com código do país):
-   se vier com mais dígitos, mantém o valor digitado sem bloquear. */
-if (telefoneInput) {
-  telefoneInput.addEventListener("input", () => {
-    let d = telefoneInput.value.replace(/\D/g, "");
-
-    // Número pré-preenchido / com código do país (> 11 dígitos):
-    // não aplica a máscara nem bloqueia — mantém o que a pessoa colou/digitou.
-    if (d.length > 11) return;
-
-    let out = "";
-    if (d.length > 0) out = "(" + d.slice(0, 2);
-    if (d.length >= 2) out += ") ";
-    if (d.length > 2) out += d.slice(2, 7);
-    if (d.length > 7) out += "-" + d.slice(7, 11);
-
-    telefoneInput.value = out;
-  });
-}
+/* Campo de WhatsApp livre: sem máscara e sem formato obrigatório.
+   O placeholder apenas indica o formato sugerido. */
 
 /* --- Validação --- */
 function setError(id, msg) {
@@ -88,7 +70,7 @@ function validate() {
 
   const nome = document.getElementById("nome")?.value.trim() || "";
   const email = document.getElementById("email")?.value.trim() || "";
-  const tel = telefoneInput?.value.replace(/\D/g, "") || "";
+  const tel = telefoneInput?.value.trim() || "";
 
   ["nome", "email", "telefone"].forEach(clearError);
 
@@ -102,10 +84,10 @@ function validate() {
     ok = false;
   }
 
-  // DDD (2) + número (8 ou 9). Aceita também número pré-preenchido com
-  // código do país (até 13 dígitos) sem bloquear.
-  if (tel.length < 10 || tel.length > 13) {
-    setError("telefone", "Informe o WhatsApp com DDD.");
+  // WhatsApp livre: sem formato nem quantidade de dígitos obrigatória.
+  // Só não pode ficar em branco.
+  if (tel.length === 0) {
+    setError("telefone", "Informe o seu WhatsApp.");
     ok = false;
   }
 
