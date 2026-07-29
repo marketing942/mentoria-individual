@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/webp" href="public/logo-cppem.webp" />
+  <link rel="icon" type="image/png" href="public/logo-cppem-web.png" />
 
 </head>
 <body>
@@ -38,7 +38,12 @@
 
   <!-- ═══ HERÓI ═══ -->
   <main class="page hero">
-    <img class="logo" src="public/logo-cppem.webp" alt="CPPEM Concursos Públicos" width="240" height="84" />
+    <!-- A varredura de luz é uma camada irmã da logo, recortada pelo alpha do
+         próprio PNG (ver .logo-shine no styles.css). -->
+    <div class="logo-wrap">
+      <img class="logo" src="public/logo-cppem-web.png" alt="CPPEM Concursos Públicos" width="960" height="511" fetchpriority="high" />
+      <span class="logo-shine" aria-hidden="true"></span>
+    </div>
 
     <span class="hero__tag">Mentoria individual · Prof. Everton Mota</span>
 
@@ -264,39 +269,39 @@
 
     <div class="platform__rail" aria-label="Telas da plataforma de estudos do CPPEM">
       <ul class="platform__track">
-        <li class="platform__shot"><img src="public/plataforma/plataforma-01.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Briefing da missão — visão geral da plataforma CPPEM" /></li>
-        <li class="platform__shot"><img src="public/plataforma/plataforma-02.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Missões diárias do aluno na plataforma CPPEM" /></li>
-        <li class="platform__shot"><img src="public/plataforma/plataforma-03.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Plano de combate — cronograma semanal de estudos" /></li>
-        <li class="platform__shot"><img src="public/plataforma/plataforma-04.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Painel de acompanhamento de estudos" /></li>
-        <li class="platform__shot"><img src="public/plataforma/plataforma-05.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Área de conteúdos da plataforma CPPEM" /></li>
-        <li class="platform__shot"><img src="public/plataforma/plataforma-06.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Metas e gamificação na plataforma CPPEM" /></li>
-        <li class="platform__shot"><img src="public/plataforma/plataforma-07.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Tela de progresso do aluno" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-01.png" loading="lazy" decoding="async" draggable="false" alt="Briefing da missão — visão geral da plataforma CPPEM" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-02.png" loading="lazy" decoding="async" draggable="false" alt="Missões diárias do aluno na plataforma CPPEM" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-03.png" loading="lazy" decoding="async" draggable="false" alt="Plano de combate — cronograma semanal de estudos" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-04.png" loading="lazy" decoding="async" draggable="false" alt="Painel de acompanhamento de estudos" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-05.png" loading="lazy" decoding="async" draggable="false" alt="Área de conteúdos da plataforma CPPEM" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-06.png" loading="lazy" decoding="async" draggable="false" alt="Metas e gamificação na plataforma CPPEM" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-07.png" loading="lazy" decoding="async" draggable="false" alt="Tela de progresso do aluno" /></li>
         <!-- cópia para o loop infinito -->
-        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-01.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
-        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-02.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
-        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-03.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
-        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-04.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
-        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-05.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
-        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-06.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
-        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-07.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-01.png" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-02.png" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-03.png" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-04.png" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-05.png" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-06.png" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-07.png" loading="lazy" decoding="async" draggable="false" alt="" /></li>
       </ul>
 
       <ul class="platform__track platform__track--rev">
-        <li class="platform__shot"><img src="public/plataforma/plataforma-08.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Banco de questões e simulados da plataforma CPPEM" /></li>
-        <li class="platform__shot"><img src="public/plataforma/plataforma-09.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Arsenal de fogo — aulas, PDFs e simulados por matéria" /></li>
-        <li class="platform__shot"><img src="public/plataforma/plataforma-10.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Material de apoio da plataforma CPPEM" /></li>
-        <li class="platform__shot"><img src="public/plataforma/plataforma-11.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Mapas mentais e resumos da plataforma CPPEM" /></li>
-        <li class="platform__shot"><img src="public/plataforma/plataforma-12.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Rendimento operacional — desempenho do aluno em tempo real" /></li>
-        <li class="platform__shot"><img src="public/plataforma/plataforma-13.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Plano de treinamento físico para o TAF" /></li>
-        <li class="platform__shot"><img src="public/plataforma/plataforma-14.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Perfil e evolução do aluno na plataforma CPPEM" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-08.png" loading="lazy" decoding="async" draggable="false" alt="Banco de questões e simulados da plataforma CPPEM" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-09.png" loading="lazy" decoding="async" draggable="false" alt="Arsenal de fogo — aulas, PDFs e simulados por matéria" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-10.png" loading="lazy" decoding="async" draggable="false" alt="Material de apoio da plataforma CPPEM" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-11.png" loading="lazy" decoding="async" draggable="false" alt="Mapas mentais e resumos da plataforma CPPEM" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-12.png" loading="lazy" decoding="async" draggable="false" alt="Rendimento operacional — desempenho do aluno em tempo real" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-13.png" loading="lazy" decoding="async" draggable="false" alt="Plano de treinamento físico para o TAF" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-14.png" loading="lazy" decoding="async" draggable="false" alt="Perfil e evolução do aluno na plataforma CPPEM" /></li>
         <!-- cópia para o loop infinito -->
-        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-08.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
-        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-09.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
-        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-10.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
-        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-11.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
-        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-12.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
-        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-13.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
-        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-14.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-08.png" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-09.png" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-10.png" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-11.png" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-12.png" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-13.png" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-14.png" loading="lazy" decoding="async" draggable="false" alt="" /></li>
       </ul>
     </div>
 
@@ -482,7 +487,7 @@
     <div class="footer__inner">
       <div class="footer__brand">
         <div class="footer__logos">
-          <img src="public/logo-cppem.webp" alt="CPPEM Concursos Públicos" width="160" height="56" loading="lazy" />
+          <img src="public/logo-cppem-web.png" alt="CPPEM Concursos Públicos" width="960" height="511" loading="lazy" />
         </div>
         <p>Preparação de elite para concursos públicos de segurança pública e forças armadas.</p>
         <div class="footer__social">
