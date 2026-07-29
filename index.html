@@ -9,243 +9,538 @@
   'https://sgtm.cppem.com.br/metrics/'+dl;f.parentNode.insertBefore(j,f);})
   (window,document,'script','dataLayer');</script>
   <!-- End Google Tag Manager -->
-  
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CPPEM Concursos — Preparação para Concursos Policiais (PMPE)</title>
-  <meta name="description" content="Entre para a lista do CPPEM e receba orientação para concursos policiais. PM, PC, PRF, PF e Penal." />
-  <meta property="og:title" content="CPPEM Concursos — A sua preparação para vestir a farda começa com direção." />
-  <meta property="og:image" content="/bg-collage.jpg" />
+  <title>Mentoria Individual CPPEM — Acompanhamento do Prof. Everton Mota</title>
+  <meta name="description" content="Mentoria individual do Prof. Everton Mota para carreiras policiais: plano de estudo próprio, encontros ao vivo todo mês e acesso à plataforma CPPEM. Vagas limitadas." />
+  <meta property="og:title" content="Mentoria Individual CPPEM — a sua preparação para vestir a farda, com direção." />
+  <meta property="og:description" content="Um mentor ao vivo, todo mês, guiando o seu estudo até a aprovação. Vagas limitadas para melhor acompanhamento." />
+  <meta property="og:image" content="/public/bgsniper.webp" />
+  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="public/logo-cppem.png" />
+  <link rel="icon" type="image/webp" href="public/logo-cppem.webp" />
+
 </head>
 <body>
 
-  <!-- Fundo mesclado (colagem de todas as imagens) -->
+  <!-- Fundo mesclado -->
   <div class="bg" aria-hidden="true"></div>
   <div class="bg-scrim" aria-hidden="true"></div>
 
-  <!-- TOPBAR VERMELHA — escassez -->
+  <!-- ═══ TOPBAR — escassez ═══ -->
   <div class="topbar" role="alert">
-    🔥 ATENÇÃO: as <strong>vagas estão acabando</strong> — garanta a sua antes que fechem!
+    <span class="topbar__dot" aria-hidden="true"></span>Vagas limitadas para melhor acompanhamento!
   </div>
 
-  <main class="page">
+  <!-- ═══ HERÓI ═══ -->
+  <main class="page hero">
+    <img class="logo" src="public/logo-cppem.webp" alt="CPPEM Concursos Públicos" width="240" height="84" />
 
-    <!-- Logo CPPEM (dourada) -->
-    <img class="logo" src="public/logo-cppem.png" alt="CPPEM Concursos Públicos" />
+    <span class="hero__tag">Mentoria individual · Prof. Everton Mota</span>
 
-    <!-- 1. HEADLINE -->
     <h1 class="headline">
       Mentoria individual para <span class="hl">vestir a farda</span> com direção.
     </h1>
     <p class="sub">
-      O acompanhamento individual do Prof. Everton Mota para carreiras policiais: um mentor ao vivo, todo mês, guiando o seu estudo até a aprovação. Assista ao vídeo abaixo.
+      O acompanhamento individual do Prof. Everton Mota para carreiras policiais:
+      um mentor ao vivo, todo mês, guiando o seu estudo até a aprovação.
     </p>
 
-    <!-- 2. VSL — VÍDEO DE VENDAS -->
-    <div class="vsl">
-      <div class="vsl__frame">
-        <!--
-          👉 COLOQUE SEU VÍDEO AQUI.
-          Exemplo YouTube:
-          <iframe src="https://www.youtube.com/embed/SEU_ID?rel=0" title="VSL CPPEM" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          Ou vídeo próprio:
-          <video src="public/vsl.mp4" controls playsinline poster="public/tropa-pmpe.jpeg"></video>
-        -->
-        <div class="vsl__placeholder" id="vsl-placeholder">
-          <div class="vsl__play"></div>
-          <span>Seu vídeo de vendas aqui</span>
+    <!--
+      ═══ VSL — VÍDEO DE VENDAS ═══
+      Enquanto não houver VSL, este bloco fica fora do ar. Para publicar o vídeo,
+      basta descomentar e trocar o src (o CSS de .vsl já está pronto):
+
+      <div class="vsl">
+        <div class="vsl__frame">
+          <iframe src="https://www.youtube.com/embed/SEU_ID?rel=0" title="Mentoria Individual CPPEM"
+                  allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    -->
+
+    <button type="button" id="open-modal" class="cta">Quero vestir a farda</button>
+    <span class="cta-note">Fale com a nossa equipe e veja se ainda há vaga aberta.</span>
+
+    <div class="trust">
+      <div><b>15</b><span>Concursos aprovados</span></div>
+      <div><b>14K+</b><span>Alunos aprovados</span></div>
+      <div><b>7+</b><span>Anos de atuação</span></div>
+    </div>
+  </main>
+
+  <!-- ═══ DORES ═══ -->
+  <section class="section" id="dores" aria-labelledby="dores-title">
+    <div class="section__head">
+      <span class="eyebrow">Onde você trava hoje</span>
+      <h2 class="section-title" id="dores-title">O que separa você da <span>farda</span></h2>
+      <p class="section-sub">Se você se reconhece em algum desses pontos, o problema nunca foi esforço — foi direção.</p>
+    </div>
+
+    <div class="cards cards--dores">
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.6 8.4l-2.2 5.2-5.2 2.2 2.2-5.2 5.2-2.2z"/><circle cx="12" cy="12" r=".4" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <h3>Não sabe por onde começar</h3>
+        <p>Tanta matéria, tantos editais e nenhuma clareza do primeiro passo — então você não dá nenhum.</p>
+        <span class="card__num" aria-hidden="true">01</span>
+      </article>
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M6.5 3h11M6.5 21h11"/><path d="M7.5 3c0 4.2 3.8 5.4 4.5 9-.7 3.6-4.5 4.8-4.5 9M16.5 3c0 4.2-3.8 5.4-4.5 9 .7 3.6 4.5 4.8 4.5 9"/></svg>
+        </div>
+        <h3>Fica procrastinando nos estudos</h3>
+        <p>Adia o começo pra segunda-feira, pro mês que vem, pro próximo edital. E o tempo passa.</p>
+        <span class="card__num" aria-hidden="true">02</span>
+      </article>
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="5" y="4.5" width="14" height="16.5" rx="2"/><path d="M9 4.5V3.2h6v1.3"/><path d="M8.5 10h7M8.5 13.5h7M8.5 17h4"/></svg>
+        </div>
+        <h3>Não sabe montar um plano eficaz</h3>
+        <p>Estuda no impulso, sem cronograma, sem revisão e sem simulado — e não sai do lugar.</p>
+        <span class="card__num" aria-hidden="true">03</span>
+      </article>
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 3l9 4.5-9 4.5-9-4.5L12 3z"/><path d="M3 12l9 4.5L21 12"/><path d="M3 16.5L12 21l9-4.5"/></svg>
+        </div>
+        <h3>Compra vários cursos e é tudo igual</h3>
+        <p>Acumula material solto, didáticas diferentes e nenhum guia dizendo o que fazer com tudo isso.</p>
+        <span class="card__num" aria-hidden="true">04</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- ═══ SONHOS ═══ -->
+  <section class="section" id="sonhos" aria-labelledby="sonhos-title">
+    <div class="section__head">
+      <span class="eyebrow">O que te espera</span>
+      <h2 class="section-title" id="sonhos-title">A vida que a <span>aprovação</span> abre pra você</h2>
+      <p class="section-sub">É por isso que vale acordar cedo, sentar e estudar certo.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2.5l7 3v5.4c0 4.6-3 7.7-7 9.1-4-1.4-7-4.5-7-9.1V5.5l7-3z"/><path d="M12 8l1.15 2.33 2.57.37-1.86 1.81.44 2.56L12 13.87l-2.3 1.2.44-2.56-1.86-1.81 2.57-.37L12 8z"/></svg>
+        </div>
+        <h3>Conquiste sua farda</h3>
+        <p>Vista o uniforme que você sonha desde criança e assuma o posto que sempre quis.</p>
+        <span class="card__num" aria-hidden="true">01</span>
+      </article>
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.7"/><path d="M6 9.5v5M18 9.5v5"/></svg>
+        </div>
+        <h3>Estabilidade financeira</h3>
+        <p>Salário garantido todo mês, plano de carreira e a segurança de nunca mais temer demissão.</p>
+        <span class="card__num" aria-hidden="true">02</span>
+      </article>
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 9.5V20h14V9.5"/><path d="M9.5 20v-5.5h5V20"/></svg>
+        </div>
+        <h3>Mude sua vida e a da sua família</h3>
+        <p>Dê o padrão de vida que os seus merecem e vire referência de orgulho em casa.</p>
+        <span class="card__num" aria-hidden="true">03</span>
+      </article>
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.2"/><path d="M12 1.5v3.4M12 19.1v3.4M1.5 12h3.4M19.1 12h3.4"/><circle cx="12" cy="12" r="2.3"/></svg>
+        </div>
+        <h3>Conquiste a posse de arma</h3>
+        <p>Assuma o direito e a responsabilidade de portar arma e proteger quem você ama.</p>
+        <span class="card__num" aria-hidden="true">04</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- ═══ MENTOR ═══ -->
+  <section class="section" id="mentor" aria-labelledby="mentor-title">
+    <div class="mentor__grid">
+      <div class="mentor__photo">
+        <img src="public/everton-mentor.jpg" width="1000" height="1250" loading="lazy" decoding="async" alt="Prof. Everton Mota em equipamento operacional" />
+        <div class="mentor__badge">
+          <strong>Prof. Everton Mota</strong>
+          <span>Mentor · CPPEM Concursos</span>
+        </div>
+      </div>
+
+      <div class="mentor__content">
+        <span class="eyebrow">Quem te acompanha</span>
+        <h2 class="section-title section-title--left" id="mentor-title">Quem te orienta aqui <span>já passou.</span></h2>
+        <p>
+          Aprovado em <strong>15 concursos públicos</strong>, o Prof. Everton Mota não ensina pelo livro.
+          Ensina pela estrada que ele mesmo caminhou. Há mais de 7 anos forma candidatos para carreiras
+          policiais no Nordeste, com mais de 14 mil aprovados.
+        </p>
+        <p>
+          Na <strong>mentoria individual</strong>, você não vai assistir mais uma aula gravada e ficar sozinho.
+          Vai ter o professor, ao vivo, todo mês, te corrigindo, te direcionando e respondendo pessoalmente
+          o que está travando o seu estudo.
+        </p>
+        <div class="mentor__divider"></div>
+        <div class="mentor__stats">
+          <div><b>15</b><span>Concursos aprovados</span></div>
+          <div><b>14K+</b><span>Alunos aprovados</span></div>
+          <div><b>7+</b><span>Anos de atuação</span></div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- 3. SUBHEADLINE + CTA -->
-    <p class="subheadline">
-      A <span class="g">mentoria individual</span> é o acompanhamento de perto que falta no seu estudo: o professor, ao vivo, corrigindo a sua rota até a aprovação.
+  <!-- ═══ BENEFÍCIOS ═══ -->
+  <section class="section" id="mentoria" aria-labelledby="mentoria-title">
+    <div class="section__head">
+      <span class="eyebrow">A mentoria individual</span>
+      <h2 class="section-title" id="mentoria-title">O que você tem <span>dentro da mentoria</span></h2>
+      <p class="section-sub">
+        Um acompanhamento de perto, feito para o seu concurso e o seu momento — direto com quem já passou.
+      </p>
+    </div>
+
+    <div class="cards cards--3">
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.4"/><circle cx="12" cy="12" r="4.4"/><circle cx="12" cy="12" r=".9" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <h3>Plano individual</h3>
+        <p>Uma rota de estudos montada para você, de acordo com o seu concurso-alvo e o tempo que você tem.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="13" height="13" rx="2.5"/><path d="M15.5 10l6-3.2v10.4l-6-3.2z"/></svg>
+        </div>
+        <h3>Encontros ao vivo</h3>
+        <p>Todo mês, ao vivo com o Prof. Everton Mota — corrigindo a sua rota e respondendo o que trava o seu estudo.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.6 8.4l-2.2 5.2-5.2 2.2 2.2-5.2 5.2-2.2z"/></svg>
+        </div>
+        <h3>Direção de quem já passou</h3>
+        <p>Orientação baseada em 15 aprovações reais. Nada de teoria solta: o caminho que já levou milhares à farda.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 20l1-4.2L15.6 5.2a2 2 0 0 1 2.8 0l.4.4a2 2 0 0 1 0 2.8L8.2 19 4 20z"/><path d="M14.2 6.6l3.2 3.2"/></svg>
+        </div>
+        <h3>Correção pessoal</h3>
+        <p>Suas dúvidas e travas respondidas de forma individual, sem se perder no meio de uma turma lotada.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2.5l7 3v5.4c0 4.6-3 7.7-7 9.1-4-1.4-7-4.5-7-9.1V5.5l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3>Foco em carreiras policiais</h3>
+        <p>Preparação direcionada para PM, PC, PRF, PF e Penal — as bancas e os editais que realmente importam.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="13" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 12.5l3-3 2.5 2.5 4.5-4.5"/></svg>
+        </div>
+        <h3>Plataforma CPPEM inclusa</h3>
+        <p>Cronograma diário, aulas, questões, simulados e painel de evolução — tudo no mesmo lugar.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ═══ PLATAFORMA ═══ -->
+  <section class="section" id="plataforma" aria-labelledby="plataforma-title">
+    <div class="section__head">
+      <span class="eyebrow">Plataforma de estudos</span>
+      <h2 class="section-title" id="plataforma-title">A mentoria também te dá acesso à <span>plataforma</span></h2>
+      <p class="section-sub">
+        Entre uma mentoria e outra, a sua rotina de estudo vive aqui dentro: cronograma, aulas,
+        questões e o seu painel de evolução.
+      </p>
+    </div>
+
+    <div class="platform__rail" aria-label="Telas da plataforma de estudos do CPPEM">
+      <ul class="platform__track">
+        <li class="platform__shot"><img src="public/plataforma/plataforma-01.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Briefing da missão — visão geral da plataforma CPPEM" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-02.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Missões diárias do aluno na plataforma CPPEM" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-03.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Plano de combate — cronograma semanal de estudos" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-04.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Painel de acompanhamento de estudos" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-05.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Área de conteúdos da plataforma CPPEM" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-06.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Metas e gamificação na plataforma CPPEM" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-07.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Tela de progresso do aluno" /></li>
+        <!-- cópia para o loop infinito -->
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-01.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-02.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-03.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-04.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-05.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-06.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-07.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+      </ul>
+
+      <ul class="platform__track platform__track--rev">
+        <li class="platform__shot"><img src="public/plataforma/plataforma-08.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Banco de questões e simulados da plataforma CPPEM" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-09.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Arsenal de fogo — aulas, PDFs e simulados por matéria" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-10.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Material de apoio da plataforma CPPEM" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-11.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Mapas mentais e resumos da plataforma CPPEM" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-12.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Rendimento operacional — desempenho do aluno em tempo real" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-13.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Plano de treinamento físico para o TAF" /></li>
+        <li class="platform__shot"><img src="public/plataforma/plataforma-14.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="Perfil e evolução do aluno na plataforma CPPEM" /></li>
+        <!-- cópia para o loop infinito -->
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-08.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-09.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-10.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-11.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-12.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-13.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="platform__shot" aria-hidden="true"><img src="public/plataforma/plataforma-14.png" width="1918" height="801" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+      </ul>
+    </div>
+
+    <ul class="platform__features">
+      <li>Cronograma diário</li>
+      <li>Aulas gravadas</li>
+      <li>Simulados e questões</li>
+      <li>Painel de evolução</li>
+      <li>Metas e gamificação</li>
+      <li>Material de apoio</li>
+    </ul>
+
+    <p class="platform__note">
+      Ao entrar na mentoria individual, <strong>o acesso à plataforma vem junto</strong> — as mentorias ao vivo
+      ficam gravadas lá dentro, ao lado do seu cronograma e das suas métricas de estudo.
     </p>
-    <p class="cta-line">
-      Clique no botão abaixo para saber como funciona a mentoria individual e conversar com a nossa equipe.
-    </p>
+  </section>
 
-    <!-- 4. BOTÃO VERDE (abre o popup) -->
-    <button type="button" id="open-modal" class="cta">QUERO VESTIR A FARDA</button>
+  <!-- ═══ COMPARATIVO ═══ -->
+  <section class="section" id="comparativo" aria-labelledby="comparativo-title">
+    <div class="section__head">
+      <span class="eyebrow">Por que a mentoria</span>
+      <h2 class="section-title" id="comparativo-title">CPPEM <span>vs.</span> as outras opções</h2>
+      <p class="section-sub">A diferença entre estudar muito e estudar certo até vestir a farda.</p>
+    </div>
 
-    <!-- 5. SEÇÃO MENTOR -->
-    <section class="mentor" aria-label="Seu mentor">
-      <div class="wrap mentor__grid">
-        <div class="mentor__photo">
-          <img src="public/everton-mota.jpg" alt="Prof. Everton Mota" />
-          <div class="mentor__badge">
-            <strong>PROF. EVERTON MOTA</strong>
-            <span>MENTOR · CPPEM CONCURSOS</span>
-          </div>
+    <div class="compare-wrap">
+      <div class="compare">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">O que você precisa</th>
+              <th scope="col" class="col-cppem">Mentoria CPPEM</th>
+              <th scope="col">Cursinhos online</th>
+              <th scope="col">Cursinhos presenciais</th>
+              <th scope="col">Estudar por conta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature">Plano montado para o seu caso</td>
+              <td class="col-cppem"><span class="mark yes"><span class="ico">✓</span> Individual, do seu edital</span></td>
+              <td class="col-alt"><span class="mark no"><span class="ico">✕</span> Cronograma genérico</span></td>
+              <td class="col-alt"><span class="mark no"><span class="ico">✕</span> Só entrega a aula</span></td>
+              <td class="col-alt"><span class="mark no"><span class="ico">✕</span> Você monta sozinho</span></td>
+            </tr>
+            <tr>
+              <td class="feature">Contato direto com quem já passou</td>
+              <td class="col-cppem"><span class="mark yes"><span class="ico">✓</span> Ao vivo com o professor</span></td>
+              <td class="col-alt"><span class="mark no"><span class="ico">✕</span> Suporte por ticket</span></td>
+              <td class="col-alt"><span class="mark no"><span class="ico">✕</span> Turma lotada</span></td>
+              <td class="col-alt"><span class="mark no"><span class="ico">✕</span> Ninguém te guia</span></td>
+            </tr>
+            <tr>
+              <td class="feature">Ajuste de rota todo mês</td>
+              <td class="col-cppem"><span class="mark yes"><span class="ico">✓</span> Encontro mensal fixo</span></td>
+              <td class="col-alt"><span class="mark no"><span class="ico">✕</span> Não existe</span></td>
+              <td class="col-alt"><span class="mark no"><span class="ico">✕</span> Não existe</span></td>
+              <td class="col-alt"><span class="mark no"><span class="ico">✕</span> Você só percebe na prova</span></td>
+            </tr>
+            <tr>
+              <td class="feature">Correção individual de dúvidas</td>
+              <td class="col-cppem"><span class="mark yes"><span class="ico">✓</span> Pessoal, sem fila</span></td>
+              <td class="col-alt"><span class="mark no"><span class="ico">✕</span> Fórum genérico</span></td>
+              <td class="col-alt"><span class="mark no"><span class="ico">✕</span> No fim da aula, se der tempo</span></td>
+              <td class="col-alt"><span class="mark no"><span class="ico">✕</span> Você tenta no vídeo</span></td>
+            </tr>
+            <tr>
+              <td class="feature">Revisões e simulados estruturados</td>
+              <td class="col-cppem"><span class="mark yes"><span class="ico">✓</span> Calibrados pra sua prova</span></td>
+              <td class="col-alt"><span class="mark no"><span class="ico">✕</span> Fica a seu critério</span></td>
+              <td class="col-alt"><span class="mark no"><span class="ico">✕</span> Raro ou inexistente</span></td>
+              <td class="col-alt"><span class="mark no"><span class="ico">✕</span> Sem constância</span></td>
+            </tr>
+            <tr>
+              <td class="feature">Cobrança e constância</td>
+              <td class="col-cppem"><span class="mark yes"><span class="ico">✓</span> Alguém olhando por você</span></td>
+              <td class="col-alt"><span class="mark no"><span class="ico">✕</span> Aluno desiste do sonho</span></td>
+              <td class="col-alt"><span class="mark no"><span class="ico">✕</span> Some e ninguém nota</span></td>
+              <td class="col-alt"><span class="mark no"><span class="ico">✕</span> Só a sua força de vontade</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="compare-hint" aria-hidden="true">Arraste para o lado para comparar &rarr;</p>
+    </div>
+  </section>
+
+  <!-- ═══ PROVAS SOCIAIS ═══ -->
+  <section class="section" id="alunos" aria-labelledby="alunos-title">
+    <div class="section__head">
+      <span class="eyebrow">Prova real</span>
+      <h2 class="section-title" id="alunos-title">Alunos que já <span>vestiram a farda</span></h2>
+      <p class="section-sub">Gente comum que estudou certo, com direção — e hoje está do outro lado.</p>
+    </div>
+
+    <div class="carousel" aria-label="Fotos de alunos aprovados com o Prof. Everton Mota">
+      <ul class="carousel__track">
+        <li class="carousel__item"><img src="public/foto1.webp"  width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="Aluno aprovado do CPPEM" /></li>
+        <li class="carousel__item"><img src="public/foto2.webp"  width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="Aluno aprovado do CPPEM" /></li>
+        <li class="carousel__item"><img src="public/foto3.webp"  width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="Aluno aprovado do CPPEM" /></li>
+        <li class="carousel__item"><img src="public/foto4.webp"  width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="Aluno aprovado do CPPEM" /></li>
+        <li class="carousel__item"><img src="public/foto5.webp"  width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="Aluno aprovado do CPPEM" /></li>
+        <li class="carousel__item"><img src="public/foto6.webp"  width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="Aluno aprovado do CPPEM" /></li>
+        <li class="carousel__item"><img src="public/foto7.webp"  width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="Aluno aprovado do CPPEM" /></li>
+        <li class="carousel__item"><img src="public/foto8.webp"  width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="Aluno aprovado do CPPEM" /></li>
+        <li class="carousel__item"><img src="public/foto9.webp"  width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="Aluno aprovado do CPPEM" /></li>
+        <li class="carousel__item"><img src="public/foto10.webp" width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="Aluno aprovado do CPPEM" /></li>
+        <li class="carousel__item"><img src="public/foto11.webp" width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="Aluno aprovado do CPPEM" /></li>
+        <li class="carousel__item"><img src="public/foto12.webp" width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="Aluno aprovado do CPPEM" /></li>
+        <li class="carousel__item"><img src="public/foto13.webp" width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="Aluno aprovado do CPPEM" /></li>
+        <li class="carousel__item"><img src="public/foto14.webp" width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="Aluno aprovado do CPPEM" /></li>
+        <!-- cópia para o loop infinito -->
+        <li class="carousel__item" aria-hidden="true"><img src="public/foto1.webp"  width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="carousel__item" aria-hidden="true"><img src="public/foto2.webp"  width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="carousel__item" aria-hidden="true"><img src="public/foto3.webp"  width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="carousel__item" aria-hidden="true"><img src="public/foto4.webp"  width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="carousel__item" aria-hidden="true"><img src="public/foto5.webp"  width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="carousel__item" aria-hidden="true"><img src="public/foto6.webp"  width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="carousel__item" aria-hidden="true"><img src="public/foto7.webp"  width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="carousel__item" aria-hidden="true"><img src="public/foto8.webp"  width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="carousel__item" aria-hidden="true"><img src="public/foto9.webp"  width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="carousel__item" aria-hidden="true"><img src="public/foto10.webp" width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="carousel__item" aria-hidden="true"><img src="public/foto11.webp" width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="carousel__item" aria-hidden="true"><img src="public/foto12.webp" width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="carousel__item" aria-hidden="true"><img src="public/foto13.webp" width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+        <li class="carousel__item" aria-hidden="true"><img src="public/foto14.webp" width="320" height="400" loading="lazy" decoding="async" draggable="false" alt="" /></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══ FAQ ═══ -->
+  <section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="section__head">
+      <span class="eyebrow">Dúvidas frequentes</span>
+      <h2 class="section-title" id="faq-title">Perguntas <span>e respostas</span></h2>
+    </div>
+
+    <div class="faq__list">
+      <details class="faq__item">
+        <summary>Essa mentoria serve pra qual concurso? Posso prestar mais de um?<span class="faq__icon" aria-hidden="true"></span></summary>
+        <div class="faq__answer"><p>A mentoria é focada em carreiras policiais — PM, PC, PRF, PF e Penal. Seu plano é montado para o seu concurso-alvo, e a base construída te prepara para prestar mais de um edital dentro dessas áreas.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary>Como funciona a mentoria na prática?<span class="faq__icon" aria-hidden="true"></span></summary>
+        <div class="faq__answer"><p>Você recebe um plano de estudos individual e, todo mês, tem um encontro ao vivo com o Prof. Everton Mota corrigindo a sua rota, tirando dúvidas e ajustando o seu direcionamento até a aprovação. O acesso à plataforma CPPEM acompanha a mentoria.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary>As mentorias ao vivo ficam gravadas?<span class="faq__icon" aria-hidden="true"></span></summary>
+        <div class="faq__answer"><p>Sim. Todos os encontros ficam gravados e disponíveis dentro da plataforma para você rever quando quiser, no seu ritmo, sem perder nenhuma orientação.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary>Eu trabalho o dia todo. Esse modelo funciona pra mim?<span class="faq__icon" aria-hidden="true"></span></summary>
+        <div class="faq__answer"><p>Funciona. O plano é montado de acordo com o tempo real que você tem disponível — inclusive para quem estuda poucas horas por dia. A direção certa vale mais do que muitas horas perdidas sem rumo.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary>Estou começando do zero. Consigo acompanhar?<span class="faq__icon" aria-hidden="true"></span></summary>
+        <div class="faq__answer"><p>Consegue. A mentoria começa exatamente de onde você está — se for do zero, o plano parte do zero, na ordem certa, sem pular etapa e sem te deixar perdido no meio do caminho.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary>Por que as vagas são limitadas?<span class="faq__icon" aria-hidden="true"></span></summary>
+        <div class="faq__answer"><p>Porque é um acompanhamento individual, ao vivo, com o próprio professor. Para que cada aluno receba atenção de verdade, existe um número máximo de mentorados por período — quando fecha, entra lista de espera.</p></div>
+      </details>
+    </div>
+  </section>
+
+  <!-- ═══ FECHO / CTA FINAL ═══ -->
+  <section class="closing" aria-labelledby="fecho-title">
+    <div class="closing__box">
+      <span class="eyebrow">Último passo</span>
+      <h2 class="closing__title" id="fecho-title">Chega de estudar <span>sem direção</span></h2>
+      <p class="closing__sub">
+        Fale com a nossa equipe, entenda como funciona a mentoria individual e garanta a sua vaga
+        enquanto ainda há espaço na turma deste período.
+      </p>
+      <button type="button" class="cta" data-open-modal>Quero falar sobre a mentoria</button>
+      <span class="cta-note">Atendimento no WhatsApp · Sem compromisso</span>
+    </div>
+  </section>
+
+  <!-- ═══ RODAPÉ ═══ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logos">
+          <img src="public/logo-cppem.webp" alt="CPPEM Concursos Públicos" width="160" height="56" loading="lazy" />
         </div>
-        <div class="mentor__content">
-          <span class="pill">Quem te acompanha</span>
-          <h2 class="mentor__title">Quem te orienta aqui <span class="g">já passou.</span></h2>
-          <p>
-            Aprovado em <strong>15 concursos públicos</strong>, o Prof. Everton Mota não ensina pelo livro.
-            Ensina pela estrada que ele mesmo caminhou. Há mais de 7 anos forma candidatos para carreiras
-            policiais no Nordeste, com mais de 14 mil aprovados.
-          </p>
-          <p>
-            Na <strong>mentoria individual</strong>, você não vai assistir mais uma aula gravada e ficar sozinho.
-            Vai ter o professor, ao vivo, todo mês, te corrigindo, te direcionando, e respondendo pessoalmente
-            o que está travando seu estudo.
-          </p>
-          <div class="mentor__divider"></div>
-          <div class="mentor__stats">
-            <div><b>15</b><span>Concursos aprovados</span></div>
-            <div><b>14K+</b><span>Alunos aprovados</span></div>
-            <div><b>7+</b><span>Anos de atuação</span></div>
-          </div>
+        <p>Preparação de elite para concursos públicos de segurança pública e forças armadas.</p>
+        <div class="footer__social">
+          <a href="https://wa.me/5581973105354" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.2-.8 1-.9 1.1-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.5.3-.5v-.5L9 6.9c-.2-.5-.4-.4-.5-.4h-.6a1.1 1.1 0 0 0-.8.4A3.4 3.4 0 0 0 6 9.3c0 1.5 1.1 3 1.3 3.2a12 12 0 0 0 4.6 4c.6.3 1.1.5 1.5.6.7.2 1.3.2 1.7.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4zM12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.3A10 10 0 1 0 12 2z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/cppemconcursos/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9s.7.8.9 1.4c.1.4.3 1 .4 2.2 0 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4s-.8.7-1.4.9c-.4.1-1 .3-2.2.4-1.3 0-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4a3.8 3.8 0 0 1-1.4-.9 3.8 3.8 0 0 1-.9-1.4c-.1-.4-.3-1-.4-2.2 0-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4s.8-.7 1.4-.9c.4-.1 1-.3 2.2-.4 1.3 0 1.7-.1 4.9-.1zM12 0C8.7 0 8.3 0 7 .1 5.7.1 4.8.3 4.1.6c-.8.3-1.4.7-2 1.4-.7.6-1.1 1.2-1.4 2C.3 4.7.1 5.6.1 6.9 0 8.2 0 8.6 0 12s0 3.8.1 5.1c0 1.3.2 2.2.5 2.9.3.8.7 1.4 1.4 2 .6.7 1.2 1.1 2 1.4.7.3 1.6.5 2.9.5 1.3.1 1.7.1 5.1.1s3.8 0 5.1-.1c1.3 0 2.2-.2 2.9-.5.8-.3 1.4-.7 2-1.4.7-.6 1.1-1.2 1.4-2 .3-.7.5-1.6.5-2.9.1-1.3.1-1.7.1-5.1s0-3.8-.1-5.1c0-1.3-.2-2.2-.5-2.9-.3-.8-.7-1.4-1.4-2-.6-.7-1.2-1.1-2-1.4-.7-.3-1.6-.5-2.9-.5C15.8 0 15.4 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-10.4a1.4 1.4 0 1 1-2.9 0 1.4 1.4 0 0 1 2.9 0z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@cppemconcursos" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 5.8a4.3 4.3 0 0 1-1-2.8h-3.3v13.2a2.4 2.4 0 1 1-2.4-2.4c.2 0 .5 0 .7.1v-3.3a5.7 5.7 0 1 0 5 5.7V9.7a7.6 7.6 0 0 0 4.4 1.4V7.8a4.3 4.3 0 0 1-3.4-2z"/></svg>
+          </a>
+          <a href="https://www.threads.net/@cppemconcursos" target="_blank" rel="noopener" aria-label="Threads">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.2 2c-4.9 0-8 3.2-8.2 8.3v3.4c.2 5.1 3.3 8.3 8.2 8.3h.1c2.6 0 4.5-.7 6-2.2 1.9-2 1.9-4.5 1.3-6-.5-1.3-1.5-2.3-2.9-2.9-.1-2.3-1.5-3.7-3.9-3.7-1.5 0-2.9.7-3.6 1.9l1.6 1.1c.4-.7 1.1-1 2-1 1 0 1.7.5 1.9 1.5a9 9 0 0 0-1.8-.1c-2.4.1-4 1.5-3.9 3.5 0 1 .5 1.9 1.4 2.4.7.5 1.6.7 2.6.6 1.3-.1 2.3-.6 3-1.5.5-.7.8-1.5.9-2.6.5.3.9.8 1.1 1.3.3.9.4 2.4-.9 3.7-1.1 1.1-2.5 1.6-4.6 1.6h-.1c-3.8 0-6-2.4-6.2-6.5v-3.2C6.2 6.5 8.4 4 12.1 4h.1c3.8 0 6 2.4 6.2 6.5v.1l2-.1v-.1C20.1 5.2 17 2 12.2 2zm.3 12.2c-.1.9-.6 1.7-1.7 1.8-.7 0-1.4-.3-1.5-1-.1-.6.4-1.2 1.7-1.3h.5c.3 0 .7 0 1 .1v.4z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@cppemconcursos" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.5a3 3 0 0 0-2.1-2.1C19.5 3.9 12 3.9 12 3.9s-7.5 0-9.4.5A3 3 0 0 0 .5 6.5C0 8.4 0 12 0 12s0 3.6.5 5.5a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.5.5-5.5s0-3.6-.5-5.5zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/people/Cppem-Cursos-preparat%C3%B3rios/61550943416378/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.6 4.5-4.6 1.3 0 2.6.2 2.6.2v2.9h-1.5c-1.5 0-1.9.9-1.9 1.8V12h3.3l-.5 3.5h-2.8v8.4A12 12 0 0 0 24 12z"/></svg>
+          </a>
         </div>
       </div>
-    </section>
 
-    <!-- 6. SEÇÃO BENEFÍCIOS -->
-    <section class="benefits" aria-label="Benefícios da mentoria individual">
-      <div class="wrap">
-        <div class="benefits__head">
-          <span class="pill">A mentoria individual</span>
-          <h2 class="benefits__title">O que você tem <span class="g">dentro da mentoria individual</span></h2>
-          <p class="benefits__sub">
-            Um acompanhamento de perto, feito para o seu concurso e o seu momento — direto com quem já passou.
-          </p>
-        </div>
+      <nav class="footer__col" aria-label="Cursos">
+        <h4>Cursos</h4>
+        <a href="https://cppem.com.br/turmas" target="_blank" rel="noopener">Turmas</a>
+        <a href="https://unicive.cppem.com.br" target="_blank" rel="noopener">Faculdade EAD</a>
+        <a href="https://cppem.com.br/combate" target="_blank" rel="noopener">Plano de Combate</a>
+      </nav>
 
-        <div class="benefits__grid">
-          <article class="bcard">
-            <div class="bcard__icon">🎯</div>
-            <h3>Plano individual</h3>
-            <p>Uma rota de estudos montada para você, de acordo com o seu concurso-alvo e o tempo que você tem.</p>
-          </article>
-          <article class="bcard">
-            <div class="bcard__icon">🎥</div>
-            <h3>Encontros ao vivo</h3>
-            <p>Todo mês, ao vivo com o Prof. Everton Mota — corrigindo sua rota e respondendo o que trava seu estudo.</p>
-          </article>
-          <article class="bcard">
-            <div class="bcard__icon">🧭</div>
-            <h3>Direção de quem já passou</h3>
-            <p>Orientação baseada em 15 aprovações reais. Nada de teoria solta: o caminho que já levou milhares à farda.</p>
-          </article>
-          <article class="bcard">
-            <div class="bcard__icon">✍️</div>
-            <h3>Correção pessoal</h3>
-            <p>Suas dúvidas e travas respondidas de forma individual, sem se perder no meio de uma turma lotada.</p>
-          </article>
-          <article class="bcard">
-            <div class="bcard__icon">🛡️</div>
-            <h3>Foco em carreiras policiais</h3>
-            <p>Preparação direcionada para PM, PC, PRF, PF e Penal — as bancas e os editais que realmente importam.</p>
-          </article>
-          <article class="bcard">
-            <div class="bcard__icon">🔥</div>
-            <h3>Acompanhamento contínuo</h3>
-            <p>Você não fica sozinho: um mentor presente do primeiro dia de estudo até a sua aprovação.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+      <nav class="footer__col" aria-label="Conteúdo">
+        <h4>Conteúdo</h4>
+        <a href="https://cppem.com.br/noticias" target="_blank" rel="noopener">Notícias</a>
+        <a href="https://loja.cppem.com.br" target="_blank" rel="noopener">Loja</a>
+      </nav>
 
-    <!-- 7. PROVAS SOCIAIS — slots para fotos dos alunos com o Prof. Everton Mota -->
-    <section class="social">
-      <div class="social__head">
-        <span class="pill">Resultados reais</span>
-        <h2 class="social__title">Alunos que já <span class="g">vestiram a farda</span></h2>
-        <p class="social__sub">Histórias reais de quem chegou onde você quer chegar com a metodologia do Prof. Everton.</p>
-      </div>
+      <nav class="footer__col" aria-label="Institucional">
+        <h4>Institucional</h4>
+        <a href="https://cppem.com.br/quem-somos" target="_blank" rel="noopener">Quem Somos</a>
+        <a href="https://cppem.com.br/politica-de-privacidade" target="_blank" rel="noopener">Política de Privacidade</a>
+        <a href="https://cppem.notion.site/vagas" target="_blank" rel="noopener">Trabalhe Conosco</a>
+        <button type="button" data-open-modal>Suporte via WhatsApp</button>
+      </nav>
+    </div>
 
-      <!-- Carrossel infinito de fotos dos alunos (loop contínuo via CSS).
-           A 2ª sequência é uma cópia oculta de leitores de tela que garante
-           o loop perfeito. Pausa ao passar o mouse e respeita reduced-motion. -->
-      <div class="carousel" aria-label="Fotos de alunos com o Prof. Everton Mota">
-        <ul class="carousel__track">
-          <li class="carousel__item"><img src="public/foto1.webp"  width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="Aluno com o Prof. Everton Mota" /></li>
-          <li class="carousel__item"><img src="public/foto2.webp"  width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="Aluno com o Prof. Everton Mota" /></li>
-          <li class="carousel__item"><img src="public/foto3.webp"  width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="Aluno com o Prof. Everton Mota" /></li>
-          <li class="carousel__item"><img src="public/foto4.webp"  width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="Aluno com o Prof. Everton Mota" /></li>
-          <li class="carousel__item"><img src="public/foto5.webp"  width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="Aluno com o Prof. Everton Mota" /></li>
-          <li class="carousel__item"><img src="public/foto6.webp"  width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="Aluno com o Prof. Everton Mota" /></li>
-          <li class="carousel__item"><img src="public/foto7.webp"  width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="Aluno com o Prof. Everton Mota" /></li>
-          <li class="carousel__item"><img src="public/foto8.webp"  width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="Aluno com o Prof. Everton Mota" /></li>
-          <li class="carousel__item"><img src="public/foto9.webp"  width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="Aluno com o Prof. Everton Mota" /></li>
-          <li class="carousel__item"><img src="public/foto10.webp" width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="Aluno com o Prof. Everton Mota" /></li>
-          <li class="carousel__item"><img src="public/foto11.webp" width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="Aluno com o Prof. Everton Mota" /></li>
-          <li class="carousel__item"><img src="public/foto12.webp" width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="Aluno com o Prof. Everton Mota" /></li>
-          <li class="carousel__item"><img src="public/foto13.webp" width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="Aluno com o Prof. Everton Mota" /></li>
-          <li class="carousel__item"><img src="public/foto14.webp" width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="Aluno com o Prof. Everton Mota" /></li>
-          <!-- cópia para o loop infinito -->
-          <li class="carousel__item" aria-hidden="true"><img src="public/foto1.webp"  width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="" /></li>
-          <li class="carousel__item" aria-hidden="true"><img src="public/foto2.webp"  width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="" /></li>
-          <li class="carousel__item" aria-hidden="true"><img src="public/foto3.webp"  width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="" /></li>
-          <li class="carousel__item" aria-hidden="true"><img src="public/foto4.webp"  width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="" /></li>
-          <li class="carousel__item" aria-hidden="true"><img src="public/foto5.webp"  width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="" /></li>
-          <li class="carousel__item" aria-hidden="true"><img src="public/foto6.webp"  width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="" /></li>
-          <li class="carousel__item" aria-hidden="true"><img src="public/foto7.webp"  width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="" /></li>
-          <li class="carousel__item" aria-hidden="true"><img src="public/foto8.webp"  width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="" /></li>
-          <li class="carousel__item" aria-hidden="true"><img src="public/foto9.webp"  width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="" /></li>
-          <li class="carousel__item" aria-hidden="true"><img src="public/foto10.webp" width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="" /></li>
-          <li class="carousel__item" aria-hidden="true"><img src="public/foto11.webp" width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="" /></li>
-          <li class="carousel__item" aria-hidden="true"><img src="public/foto12.webp" width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="" /></li>
-          <li class="carousel__item" aria-hidden="true"><img src="public/foto13.webp" width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="" /></li>
-          <li class="carousel__item" aria-hidden="true"><img src="public/foto14.webp" width="320" height="400" loading="lazy" fetchpriority="low" decoding="async" draggable="false" alt="" /></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- 8. FAQ — dúvidas frequentes (acordeão nativo, sem JS) -->
-    <section class="faq" aria-label="Dúvidas frequentes">
-      <div class="wrap">
-        <div class="faq__head">
-          <span class="pill">Dúvidas frequentes</span>
-          <h2 class="faq__title">Perguntas <span class="g">e respostas</span></h2>
-        </div>
-
-        <div class="faq__list">
-          <details class="faq__item">
-            <summary>Essa mentoria serve pra qual concurso? Posso prestar mais de um?<span class="faq__icon" aria-hidden="true"></span></summary>
-            <div class="faq__answer"><p>A mentoria é focada em carreiras policiais — PM, PC, PRF, PF e Penal. Seu plano é montado para o seu concurso-alvo, e a base construída te prepara para prestar mais de um edital dentro dessas áreas.</p></div>
-          </details>
-          <details class="faq__item">
-            <summary>Como funciona a mentoria na prática?<span class="faq__icon" aria-hidden="true"></span></summary>
-            <div class="faq__answer"><p>Você recebe um plano de estudos individual e, todo mês, tem um encontro ao vivo com o Prof. Everton Mota corrigindo sua rota, tirando dúvidas e ajustando o seu direcionamento até a aprovação.</p></div>
-          </details>
-          <details class="faq__item">
-            <summary>As mentorias ao vivo ficam gravadas?<span class="faq__icon" aria-hidden="true"></span></summary>
-            <div class="faq__answer"><p>Sim. Todos os encontros ficam gravados e disponíveis para você rever quando quiser, no seu ritmo, sem perder nenhuma orientação.</p></div>
-          </details>
-          <details class="faq__item">
-            <summary>Eu trabalho o dia todo. Esse modelo funciona pra mim?<span class="faq__icon" aria-hidden="true"></span></summary>
-            <div class="faq__answer"><p>Funciona. O plano é montado de acordo com o tempo real que você tem disponível — inclusive para quem estuda poucas horas por dia. A direção certa vale mais do que muitas horas perdidas sem rumo.</p></div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ===== RODAPÉ ===== -->
-  <footer class="site-footer">
-    <div class="site-footer__inner">
-      <img class="site-footer__logo" src="public/logo-cppem.png" alt="CPPEM Concursos Públicos" />
-      <p class="site-footer__quote">"Seu sonho é o nosso principal objetivo."</p>
-      <button type="button" class="site-footer__support" data-open-modal>Suporte via WhatsApp</button>
-      <p class="site-footer__copy">© 2026 CPPEM Concursos · Caruaru, Pernambuco · Todos os direitos reservados</p>
+    <div class="footer__bar">
+      <span>© 2026 <strong>CPPEM Concursos Públicos LTDA.</strong> — Onde o concurseiro vira policial.</span>
+      <span class="footer__cnpj">CNPJ 57.347.872/0001-48</span>
     </div>
   </footer>
 
-  <!-- ===== POPUP / MODAL DE CAPTURA ===== -->
+  <!-- ═══ POPUP / MODAL DE CAPTURA ═══ -->
   <div class="modal" id="lead-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
     <div class="modal__overlay" data-close></div>
     <div class="modal__card">
       <button type="button" class="modal__close" data-close aria-label="Fechar">&times;</button>
-      <h2 class="modal__title" id="modal-title">Falta só um passo!</h2>
+      <h2 class="modal__title" id="modal-title">Falta só <span>um passo!</span></h2>
       <p class="modal__text">
         Já vamos te levar direto para o nosso atendimento no WhatsApp. Antes, preencha seus dados abaixo:
       </p>
@@ -256,16 +551,18 @@
            type="text" no telefone (não "tel"): é o que as outras usam, e a
            máscara da PixelX é aplicada pela classe pxa_mask_phone. -->
       <form class="form" name="lead_form" id="IPEyzyfmJhKQEYIXAlZH" novalidate>
+        <p class="form__label">Ficha de inscrição</p>
+
         <div class="field">
-          <input type="text" id="lead_name" name="name" autocomplete="name" placeholder="Nome completo" required />
+          <input type="text" id="lead_name" name="name" autocomplete="name" aria-label="Nome completo" placeholder="Nome completo" required />
           <span class="error" data-error-for="name"></span>
         </div>
         <div class="field">
-          <input type="email" id="lead_email" name="email" autocomplete="email" placeholder="E-mail" required />
+          <input type="email" id="lead_email" name="email" autocomplete="email" aria-label="E-mail" placeholder="E-mail" required />
           <span class="error" data-error-for="email"></span>
         </div>
         <div class="field">
-          <input class="pxa_mask_phone" type="text" id="lead_phone" name="phone" autocomplete="tel" placeholder="WhatsApp com DDD — ex: (81) 99999-9999" required />
+          <input class="pxa_mask_phone" type="text" id="lead_phone" name="phone" autocomplete="tel" aria-label="WhatsApp com DDD" placeholder="WhatsApp com DDD — ex: (81) 99999-9999" required />
           <span class="error" data-error-for="phone"></span>
         </div>
 
@@ -285,6 +582,6 @@
   <noscript><iframe src="https://sgtm.cppem.com.br/ns.html?id=GTM-PJ379FLQ"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  
+
 </body>
 </html>
